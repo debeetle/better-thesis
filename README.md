@@ -26,6 +26,8 @@
 2. 在本地仓库目录打开终端，执行 `powershell -ExecutionPolicy Bypass -File .\install_typst.ps1`，等待 Typst 安装完成。
 
 > Windows 默认具有脚本执行限制策略，在默认情况下，直接双击或右键运行脚本将无法运行，因此您需要通过该方法绕过该限制。您也可以参考 [about_Execution_Policies -PowerShell | Microsoft Learn](https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.6) 来调整适合你的执行策略。
+>
+> Windows 用户如果在编译时遇到 `link.exe not found` 或类似错误，请检查 C++ 开发环境是否正常，如未配置，请安装 Visual Studio Build Tools 并勾选 `Desktop development with C++`：https://visualstudio.microsoft.com/visual-cpp-build-tools/
 
 3. 根据 [Typst 文档](https://typst.app/docs/)，参考 [项目结构](#项目结构) 中的说明，按照你的需要修改论文的各个部分。
 4. 双击运行 `compile.bat`，即可生成 `thesis.pdf` 文件。
