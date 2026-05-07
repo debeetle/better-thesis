@@ -16,7 +16,7 @@ else {
 
   # Run the installer
   Write-Output "运行 Rustup 安装程序..."
-  Start-Process -FilePath $Env:Temp/rustup-init.exe -Args -y
+  Start-Process -FilePath $Env:Temp/rustup-init.exe -ArgumentList "-y" -Wait -NoNewWindow
 
   # Add Rustup to the PATH
   Write-Output "将 Rustup 添加到 PATH 环境变量..."
@@ -45,7 +45,7 @@ else {
 replace-with = "tuna"
 
 [source.tuna]
-registry = "https://mirrors.tuna.tsinghua.edu.cn/git/crates.io-index.git"
+registry = "sparse+https://mirrors.tuna.tsinghua.edu.cn/crates.io-index/"
 '@
   }
 }
