@@ -23,7 +23,7 @@
 ### Windows 用户
 
 1. [下载本仓库][download]，或者使用 `git clone https://github.com/sysu/better-thesis` 命令克隆本仓库。
-2. 在本地仓库目录打开终端，执行 `.\install_typst.ps1`，等待 Typst 安装完成。
+2. 在本地仓库目录打开终端，执行 `powershell -ExecutionPolicy Bypass -File .\install_typst.ps1`，等待 Typst 安装完成。
 
 > Windows 默认具有脚本执行限制策略，在默认情况下，直接双击或右键运行脚本将无法运行，因此您需要通过该方法绕过该限制。您也可以参考 [about_Execution_Policies -PowerShell | Microsoft Learn](https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.6) 来调整适合你的执行策略。
 
