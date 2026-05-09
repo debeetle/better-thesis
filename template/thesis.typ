@@ -1,6 +1,6 @@
 // 仅供开发调试使用
 // #import "/lib.typ": bachelor as thesis
-// #import "/lib.typ": postgraduate as thesis
+#import "/lib.typ": postgraduate as thesis
 
 // 建议在正式编辑论文时，采用 typst.app 中的已发布版本模板
 // 本科生毕业论文模板
@@ -8,7 +8,7 @@
 // #import thesis: abstract, abstract-en, acknowledgement, appendix
 
 // 硕博士毕业论文模板
-#import "@preview/modern-sysu-thesis:0.4.1": postgraduate as thesis
+// #import "@preview/modern-sysu-thesis:0.4.1": postgraduate as thesis
 #import thesis: abstract, acknowledgement, appendix, contents
 
 
