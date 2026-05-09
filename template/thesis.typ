@@ -1,6 +1,6 @@
 // 仅供开发调试使用
 // #import "/lib.typ": bachelor as thesis
-#import "/lib.typ": postgraduate as thesis
+// #import "/lib.typ": postgraduate as thesis
 
 // 建议在正式编辑论文时，采用 typst.app 中的已发布版本模板
 // 本科生毕业论文模板
@@ -8,7 +8,7 @@
 // #import thesis: abstract, acknowledgement, appendix
 
 // 硕博士毕业论文模板
-// #import "@preview/modern-sysu-thesis:0.4.1": postgraduate as thesis
+#import "@preview/modern-sysu-thesis:0.4.1": postgraduate as thesis
 #import thesis: abstract, acknowledgement, appendix, contents
 
 
@@ -187,3 +187,14 @@ $ F_n = floor(1 / sqrt(5) phi.alt^n) $
 #acknowledgement[
   感谢 NJU-LUG，感谢 NJUThesis LaTeX 模板。
 ]
+
+// 摘要
+#abstract(
+  [博学、审问、慎思、明辨、笃行是中山大学的校训。],
+  keywords: ("中山大学", "校训", "学术研究"),
+)
+
+#abstract-en(
+  ["Extensive learning, careful inquiry, prudent thinking, clear discernment, and resolute practice" is the motto of Sun Yat-sen University.],
+  keywords: ("Sun Yat-sen University", "School Motto", "Academic Research"),
+)
