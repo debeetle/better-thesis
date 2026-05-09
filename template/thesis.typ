@@ -9,7 +9,7 @@
 
 // 硕博士毕业论文模板
 #import "@preview/modern-sysu-thesis:0.4.1": postgraduate as thesis
-#import thesis: abstract, abstract-en, acknowledgement, appendix, contents
+#import thesis: abstract, acknowledgement, appendix, contents
 
 
 // 你首先应该安装 https://gitlab.com/sysu-gitlab/thesis-template/better-thesis/-/tree/main/fonts 里的所有字体，
@@ -194,6 +194,7 @@ $ F_n = floor(1 / sqrt(5) phi.alt^n) $
   keywords: ("中山大学", "校训", "学术研究"),
 )
 
+// 英文摘要
 #abstract-en(
   [Extensive learning, careful inquiry, prudent thinking, clear discernment, and resolute practice" is the motto of Sun Yat-sen University.],
   keywords: ("Sun Yat-sen University", "School Motto", "Academic Research"),
