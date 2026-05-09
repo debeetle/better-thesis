@@ -194,8 +194,8 @@ $ F_n = floor(1 / sqrt(5) phi.alt^n) $
   keywords: ("中山大学", "校训", "学术研究"),
 )
 
-// 英文摘要
-#abstract-en(
-  [Extensive learning, careful inquiry, prudent thinking, clear discernment, and resolute practice" is the motto of Sun Yat-sen University.],
-  keywords: ("Sun Yat-sen University", "School Motto", "Academic Research"),
-)
+// 英文摘要：当您使用本科论文模板时，可将此处的注释取消以写入英文摘要。
+// #abstract-en(
+//   [Extensive learning, careful inquiry, prudent thinking, clear discernment, and resolute practice" is the motto of Sun Yat-sen University.],
+//   keywords: ("Sun Yat-sen University", "School Motto", "Academic Research"),
+// )
