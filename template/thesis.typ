@@ -5,11 +5,11 @@
 // 建议在正式编辑论文时，采用 typst.app 中的已发布版本模板
 // 本科生毕业论文模板
 // #import "@preview/modern-sysu-thesis:0.4.1": bachelor as thesis
-// #import thesis: abstract, abstract_en, acknowledgement, appendix
+// #import thesis: abstract, abstract-en, acknowledgement, appendix
 
 // 硕博士毕业论文模板
 #import "@preview/modern-sysu-thesis:0.4.1": postgraduate as thesis
-#import thesis: abstract, abstract_en, acknowledgement, appendix, contents
+#import thesis: abstract, abstract-en, acknowledgement, appendix, contents
 
 
 // 你首先应该安装 https://gitlab.com/sysu-gitlab/thesis-template/better-thesis/-/tree/main/fonts 里的所有字体，
