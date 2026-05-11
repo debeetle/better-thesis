@@ -45,13 +45,13 @@ source $HOME/.cargo/env
 # 安装 Typst CLI
 cargo install typst-cli
 
-# 访问缓慢的话，执行以下命令设置清华镜像源，并从镜像站安装
+# 访问缓慢的话，执行以下命令设置中大镜像源，并从镜像站安装
 cat << EOF > $HOME/.cargo/config
 [source.crates-io]
-replace-with = "tuna"
+replace-with = "SysuMirror"
 
-[source.tuna]
-registry = "https://mirrors.tuna.tsinghua.edu.cn/git/crates.io-index.git"
+[source.SysuMirror]
+registry = "sparse+https://mirror.sysu.edu.cn/crates.io-index"
 EOF
 cargo install typst-cli
 ```
