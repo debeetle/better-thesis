@@ -42,10 +42,10 @@ else {
     New-Item -ItemType File -Path $env:USERPROFILE\.cargo\config
     Set-Content -Path $env:USERPROFILE\.cargo\config -Value @'
 [source.crates-io]
-replace-with = "tuna"
+replace-with = "SysuMirror"
 
-[source.tuna]
-registry = "sparse+https://mirrors.tuna.tsinghua.edu.cn/crates.io-index/"
+[source.SysuMirror]
+registry = "sparse+https://mirror.sysu.edu.cn/crates.io-index/"
 '@
   }
 }
