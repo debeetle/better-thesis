@@ -11,9 +11,13 @@
 // #import "@preview/modern-sysu-thesis:0.4.1": postgraduate as thesis
 #import thesis: abstract, acknowledgement, appendix, contents
 
-
 // 你首先应该安装 https://gitlab.com/sysu-gitlab/thesis-template/better-thesis/-/tree/main/fonts 里的所有字体，
 // 如果是 Web App 上编辑，你应该手动上传这些字体文件，否则不能正常使用「楷体」和「仿宋」，导致显示错误。
+
+// 定义斜体函数。在正文部分，若要使得某些文字（仅限英语）以斜体效果呈现，请像下面这样的示例调用：
+// #ita[Sun Yat-sen University]
+// 此时，文字“Sun Yat-sen University”将以斜体效果呈现。
+#let ita(body) = text(style: "italic")[#body]
 
 #show: thesis.doc.with(
   // 毕业论文基本信息
