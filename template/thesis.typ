@@ -14,6 +14,9 @@
 // 你首先应该安装 https://gitlab.com/sysu-gitlab/thesis-template/better-thesis/-/tree/main/fonts 里的所有字体，
 // 如果是 Web App 上编辑，你应该手动上传这些字体文件，否则不能正常使用「楷体」和「仿宋」，导致显示错误。
 
+// 关闭 smart quote，避免英文引号自动转换为弯引号
+#set smartquote(enabled: false)
+
 // 定义斜体函数。在正文部分，若要使得某些文字（仅限英语）以斜体效果呈现，请像下面这样的示例调用：
 // #ita[Sun Yat-sen University]
 // 此时，文字“Sun Yat-sen University”将以斜体效果呈现。
