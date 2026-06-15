@@ -29,9 +29,12 @@
 )
 
 // 英文摘要：当您使用本科论文模板时，可将此处的注释取消以写入英文摘要。
+// 其中当您像这样调用 keywords 时：
+// keywords: ([Sun Yat-sen #ita[University]], [School Motto], [Academic Research]),
+// 实际效果为：包含三个关键词，其中“University”以斜体效果呈现。
 // #abstract-en(
 //   [Extensive learning, careful inquiry, prudent thinking, clear discernment, and resolute practice" is the motto of Sun Yat-sen University.],
-//   keywords: ("Sun Yat-sen University", "School Motto", "Academic Research"),
+//   keywords: ([Sun Yat-sen #ita[University]], [School Motto], [Academic Research]),
 // )
 
 #show: thesis.doc.with(
