@@ -44,6 +44,15 @@
 
     // 摘要正文下方另起一行顶格打印“关键词”款项，后加冒号，多个关键词以逗号分隔。
     // （标题“Keywords”加粗）
-    *Keywords:* #context abstract-en-keywords.final().join(", ")
+    // 使用逐元素遍历渲染，每个元素直接作为 content 输出，单独处理分隔符
+    *Keywords:* #context {
+      let kws = abstract-en-keywords.final()
+      for (i, kw) in kws.enumerate() {
+        kw
+        if i < kws.len() - 1 {
+          [, ]
+        }
+      }
+    }
   ]
 }
