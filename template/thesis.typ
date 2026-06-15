@@ -40,7 +40,10 @@
     // 论文标题，将展示在封面、扉页与页眉上
     // 多行标题请使用数组传入 `("thesis title", "with part next line")`，或使用换行符：`"thesis title\nwith part next line"`
     title: ("基于 Typst 的", "中山大学学位论文模板"),
-    title-en: "A Typst Template for SYSU thesis",
+    // 当您像这样调用 title-en 时：
+    // title-en: ([Hello SYSU], [Sun Yat-sen #ita[University]]),
+    // 实际效果为：“Hello SYSU”与“Sun Yat-sen University”将分为两行显示，其中“University”以斜体效果呈现。 
+    title-en: ([Hello SYSU], [Sun Yat-sen #ita[University]]),
     // 论文作者信息：学号、姓名、院系、专业、指导老师
     author: (
       sno: "1xxxxxxx",
