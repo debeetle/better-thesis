@@ -11,9 +11,31 @@
 // #import "@preview/modern-sysu-thesis:0.4.1": postgraduate as thesis
 #import thesis: abstract, acknowledgement, appendix, contents
 
-
 // 你首先应该安装 https://gitlab.com/sysu-gitlab/thesis-template/better-thesis/-/tree/main/fonts 里的所有字体，
 // 如果是 Web App 上编辑，你应该手动上传这些字体文件，否则不能正常使用「楷体」和「仿宋」，导致显示错误。
+
+// 关闭 smart quote，避免英文引号自动转换为弯引号
+#set smartquote(enabled: false)
+
+// 定义斜体函数。在正文部分，若要使得某些文字（仅限英语）以斜体效果呈现，请像下面这样的示例调用：
+// #ita[Sun Yat-sen University]
+// 此时，文字“Sun Yat-sen University”将以斜体效果呈现。
+#let ita(body) = text(style: "italic")[#body]
+
+// 摘要
+#abstract(
+  [博学、审问、慎思、明辨、笃行是中山大学的校训。],
+  keywords: ("中山大学", "校训", "学术研究"),
+)
+
+// 英文摘要：当您使用本科论文模板时，可将此处的注释取消以写入英文摘要。
+// 其中当您像这样调用 keywords 时：
+// keywords: ([Sun Yat-sen #ita[University]], [School Motto], [Academic Research]),
+// 实际效果为：包含三个关键词，其中“University”以斜体效果呈现。
+// #abstract-en(
+//   [Extensive learning, careful inquiry, prudent thinking, clear discernment, and resolute practice" is the motto of Sun Yat-sen University.],
+//   keywords: ([Sun Yat-sen #ita[University]], [School Motto], [Academic Research]),
+// )
 
 #show: thesis.doc.with(
   // 毕业论文基本信息
@@ -21,7 +43,10 @@
     // 论文标题，将展示在封面、扉页与页眉上
     // 多行标题请使用数组传入 `("thesis title", "with part next line")`，或使用换行符：`"thesis title\nwith part next line"`
     title: ("基于 Typst 的", "中山大学学位论文模板"),
-    title-en: "A Typst Template for SYSU thesis",
+    // 当您像这样调用 title-en 时：
+    // title-en: ([Hello SYSU], [Sun Yat-sen #ita[University]]),
+    // 实际效果为：“Hello SYSU”与“Sun Yat-sen University”将分为两行显示，其中“University”以斜体效果呈现。 
+    title-en: ([Hello SYSU], [Sun Yat-sen #ita[University]]),
     // 论文作者信息：学号、姓名、院系、专业、指导老师
     author: (
       sno: "1xxxxxxx",
@@ -187,15 +212,3 @@ $ F_n = floor(1 / sqrt(5) phi.alt^n) $
 #acknowledgement[
   感谢 NJU-LUG，感谢 NJUThesis LaTeX 模板。
 ]
-
-// 摘要
-#abstract(
-  [博学、审问、慎思、明辨、笃行是中山大学的校训。],
-  keywords: ("中山大学", "校训", "学术研究"),
-)
-
-// 英文摘要：当您使用本科论文模板时，可将此处的注释取消以写入英文摘要。
-// #abstract-en(
-//   [Extensive learning, careful inquiry, prudent thinking, clear discernment, and resolute practice" is the motto of Sun Yat-sen University.],
-//   keywords: ("Sun Yat-sen University", "School Motto", "Academic Research"),
-// )
